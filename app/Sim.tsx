@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-export default function Sim({ name } : { name: string }) {
+export default function Sim({ name, onClick } : { name: string, onClick?: () => void }) {
     let link = '';
 
     switch (name) {
