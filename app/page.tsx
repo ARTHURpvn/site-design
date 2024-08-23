@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-      <div className="w-full h-screen flex flex-col items-center mt-20 overflow-x-hidden">
+      <div className="w-full h-screen flex flex-col items-center mt-10 max-[480px]:mt-2 overflow-x-hidden">
         <figure>
           <Image
             src="/logo.png"
@@ -18,17 +18,17 @@ export default function Home() {
           <p className="text-center mt-6 max-[480px]:mt-2 font-serif max-[480px]:text-sm"> Clara Ferreira </p>
 
         </figure>
-        <div className="pb-20 max-[480px]:pb-10 mt-10" >
+        <div className="flex flex-col gap-24 max-[480px]:gap-6 mt-24" >
           <Link href="/Instagram">
             <Sim name="Design para Redes Sociais" />
           </Link>
 
           <Link href="https://wa.me/5534984083200?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram.%0AGostaria%20de%20saber%20mais">
-            <Sim name="Peça Já seu Orçamento"/>
+            <Sim name="Peça Já seu Orçamento" />
           </Link>
 
           <Link href="https://www.instagram.com/design_frchaves">
-            <Sim name="Instagram"/>
+            <Sim name="Instagram" />
           </Link>
         </div>
       </div>

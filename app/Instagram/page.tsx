@@ -4,11 +4,11 @@ import Image from "next/image"
 export default function Instagram() {
 
     return (
-        <div className="w-screen h-screen flex flex-col">
-            <Link href="/" className="mt-6 ml-6 max-[480px]:mt-3 max-[480px]:ml-3"> Voltar </Link>
+        <div className="w-screen h-screen flex flex-col items-center overflow-x-hidden">
+            <Link href="/" className="mt-6 ml-6 max-[480px]:mt-3 max-[480px]:ml-3 self-start"> Voltar </Link>
             
-            <div className="self-center font-serif font-bold text-4xl mt-16 mb-16  max-[480px]:ml-3">
-                <p> Veja Alguns dos Meus <span className="text-purple-500">Designs</span></p>
+            <div className="flex text-center mt-16 mb-16 mx-2">
+                <p className="font-serif font-bold text-4xl"> Veja Alguns dos Meus <span className="text-purple-500"> Designs </span></p>
             </div>
 
             <div className="flex flex-wrap gap-[10px] mx-auto items-start justify-center w-11/12 ">
@@ -84,9 +84,18 @@ export default function Instagram() {
                         className="w-full"
                     />
                 </div>
+                <div className="w-[240px] h-[240px] max-[480px]:w-[120px] max-[480px]:h-[120px]">
+                    <Image
+                        src={"/post9.jpeg"}
+                        width={200}
+                        height={200}
+                        alt=" Clara Design Logo "
+                        className="w-full"
+                    />
+                </div>
             </div>
 
-            <footer className="flex items-center justify-around w-full bg-white absolute bottom-0 h-40">
+            <footer className="flex items-center justify-around w-screen bg-white h-40 mt-6">
                 <div className="text-black flex flex-col items-center justify-center">
                     <p className="text-center font-sans text-2xl font-bold"> Gostou das Artes? </p>
 
@@ -102,7 +111,7 @@ export default function Instagram() {
                     height={120} 
                     priority 
                     className="rounded-full border-2 scale-100 min-[320px]:scale-75 border-purple-500 shadow-md shadow-purple-500/40" 
-                    />
+                />
             </footer>
         </div>
     )
