@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-      <div className="w-full h-screen flex flex-col items-center mt-10 max-[480px]:mt-2 overflow-x-hidden">
+      <div className="w-full h-screen flex flex-col items-center pt-10 max-[480px]:pt-2 overflow-x-hidden">
         <figure>
           <Image
             src="/logo.png"
@@ -18,7 +18,7 @@ export default function Home() {
           <p className="text-center mt-6 max-[480px]:mt-2 font-serif max-[480px]:text-sm"> Clara Ferreira </p>
 
         </figure>
-        <div className="flex flex-col gap-24 max-[480px]:gap-6 mt-24" >
+        <div className="flex flex-col gap-24 max-[480px]:gap-6 pt-24 pb-6">
           <Link href="/Instagram">
             <Sim name="Design para Redes Sociais" />
           </Link>
