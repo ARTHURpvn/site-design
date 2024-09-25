@@ -20,7 +20,7 @@ export default function Home() {
           />
 
           <p className="text-center mt-6 max-[580px]:mt-2 font-serif max-[580px]:text-sm"> CLARA FERREIRA </p>
-          <p  className="max-[580px]:w-3/4 w-[80%] text-justify mt-6 max-[580px]:mt-4 font-serif max-[580px]:text-sm"> Sou a Clara, cursando técnico em Informática. Trabalho em projetos para lojas variadas, pequenas empresas, e estou sempre buscando criar designes, garantindo soluções criativas e personalizadas. </p>
+          <p  className="max-[580px]:w-3/4 w-1/2 text-justify mt-6 max-[580px]:mt-4 font-serif max-[580px]:text-sm"> Sou a Clara, cursando técnico em Informática. Trabalho em projetos para lojas variadas, pequenas empresas, e estou sempre buscando criar designes, garantindo soluções criativas e personalizadas. </p>
 
         <div className="flex flex-col gap-14 max-[580px]:gap-10 max-[580px]:pt-24 pt-24 pb-6">
           <Link href="/Instagram">

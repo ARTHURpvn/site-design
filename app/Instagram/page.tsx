@@ -2,9 +2,8 @@
 import Link from "next/link";
 import Image from "next/image"
 import { useState } from "react";
-
 import { MdArrowBackIos } from "react-icons/md";
-import { IoChevronBackOutline } from "react-icons/io5";
+import { IoChevronBackOutline, IoCloseOutline } from "react-icons/io5";
 import Theme from "../theme";
 
 export default function Instagram() {
@@ -50,7 +49,7 @@ export default function Instagram() {
     const rendPosts = () => {
         return posts.map((post, index) => {
             return (
-                <div onClick={() => rendPostView(post, index)} className="w-[240px] h-[240px] max-[580px]:w-[120px] max-[580px]:h-[120px]" key={index}>
+                <div onClick={() => rendPostView( post, index )} className="w-[240px] h-[240px] max-[580px]:w-[120px] max-[580px]:h-[120px]" key={ index }>
                     <Image
                         src={"/" + post}
                         width={240}
@@ -75,7 +74,7 @@ export default function Instagram() {
                         />
                         { postPosition < postPositionMax - 1 && <MdArrowBackIos className="absolute scale-150 rotate-180 -right-[15%] top-[50%] translate-[50%] cursor-pointer" onClick={nextPost}/> }
                     </div>
-                    <div className="absolute -top-12 right-0 text-white text-2xl cursor-pointer font-sans" onClick={closePostView}> X </div>
+                    <IoCloseOutline className="w-7 h-7 absolute -top-10 right-0 cursor-pointer" onClick={ closePostView }/>
                 </div>
             )}
 
@@ -97,7 +96,7 @@ export default function Instagram() {
                     <div className="dark:text-black text-white flex flex-col items-center justify-around">
                         <p className="text-center font-sans text-2xl font-bold max-sm:text-lg"> Gostou das Artes? </p>
 
-                        <Link href="https://wa.me/5534984083200?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram.%0AGostaria%20de%20saber%20mais!">
+                        <Link href="https://wa.me/5534984083200?text=Ol%C3%A1%2C%20vim%20pelo%20Site.%0AGostaria%20de%20saber%20mais!%20Sobre%20os%20design">
                             <button 
                                 className="bg-purple-500 px-6 h-14 rounded-3xl mt-4 max-sm:h-10 max-sm:text-sm max-sm:mt-2 max-sm:px-3 max-sm:rounded-2xl"
                             > FAÇA JÁ SEU ORÇAMENTO </button>
