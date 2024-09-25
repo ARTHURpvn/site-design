@@ -8,7 +8,7 @@ import Theme from "./theme";
 
 export default function Home() {
   return (
-      <div className="w-full dark:bg-black dark:text-white text-black bg-white h-screen flex flex-col items-center pt-10 max-[580px]:pt-2 overflow-x-hidden">
+      <div className="w-full transition-all duration-500 dark:bg-black dark:text-white text-black bg-white h-screen flex flex-col items-center pt-10 max-[580px]:pt-2 overflow-x-hidden">
           <Theme />
           <Image
             src="/logo.png"
@@ -20,9 +20,9 @@ export default function Home() {
           />
 
           <p className="text-center mt-6 max-[580px]:mt-2 font-serif max-[580px]:text-sm"> CLARA FERREIRA </p>
-          <p  className="max-[580px]:w-3/4 w-1/2 max-[580px]:text-justify text-center mt-6 max-[580px]:mt-4 font-serif max-[580px]:text-sm"> estou apenas testando aqui para ver como ficaria uma breve descricao sobre ela </p>
+          <p  className="max-[580px]:w-3/4 w-[80%] text-justify mt-6 max-[580px]:mt-4 font-serif max-[580px]:text-sm"> Sou a Clara, cursando técnico em Informática. Trabalho em projetos para lojas variadas, pequenas empresas, e estou sempre buscando criar designes, garantindo soluções criativas e personalizadas. </p>
 
-        <div className="flex flex-col gap-24 max-[580px]:gap-6 max-[580px]:pt-24 pt-32 pb-6">
+        <div className="flex flex-col gap-14 max-[580px]:gap-10 max-[580px]:pt-24 pt-24 pb-6">
           <Link href="/Instagram">
             <Sim name="Design para Redes Sociais" />
           </Link>

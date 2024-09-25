@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import { MdArrowBackIos } from "react-icons/md";
 import { IoChevronBackOutline } from "react-icons/io5";
+import Theme from "../theme";
 
 export default function Instagram() {
     const posts = [
@@ -78,7 +79,7 @@ export default function Instagram() {
                 </div>
             )}
 
-            <div className={`w-screen h-screen bg-white text-black dark:bg-black dark:text-white flex flex-col items-center overflow-x-hidden justify-between ${ postView && "blur-md brightness-[.3] overflow-y-hidden"}`} >
+            <div className={`w-screen h-screen transition-all duration-500 bg-white text-black dark:bg-black dark:text-white flex flex-col items-center overflow-x-hidden justify-between ${ postView && "blur-md brightness-[.3] overflow-y-hidden"}`} >
 
                 <Link href="/" className="flex  font-bold text-lg items-center mt-6 ml-6 max-[580px]:mt-3 max-[580px]:ml-3 self-start">
                     <IoChevronBackOutline className="w-9 h-9"/> Voltar
@@ -92,7 +93,7 @@ export default function Instagram() {
                 { rendPosts() }
                 </div>
 
-                <footer className="flex items-center justify-around w-screen bg-black dark:bg-white h-auto mt-6 py-4">
+                <footer className="flex items-center transition-all duration-500 justify-around w-screen bg-black dark:bg-white h-auto mt-6 py-4">
                     <div className="dark:text-black text-white flex flex-col items-center justify-around">
                         <p className="text-center font-sans text-2xl font-bold max-sm:text-lg"> Gostou das Artes? </p>
 
